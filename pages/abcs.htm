@@ -1,0 +1,395 @@
+<html>
+  <head>
+    <style>
+      .drag {
+        position: relative;
+        cursor: hand;
+      }
+    </style>
+    <script language="JavaScript1.2">
+      /*
+Drag and Drop Script- 
+© Dynamic Drive (www.dynamicdrive.com)
+For full source code, installation instructions,
+100's more DHTML scripts, and Terms Of
+Use, visit dynamicdrive.com
+*/
+
+      var dragapproved = false;
+      var z, x, y;
+      function move() {
+        if (event.button == 1 && dragapproved) {
+          z.style.pixelLeft = temp1 + event.clientX - x;
+          z.style.pixelTop = temp2 + event.clientY - y;
+          return false;
+        }
+      }
+      function drags() {
+        if (!document.all) return;
+        if (event.srcElement.className == "drag") {
+          dragapproved = true;
+          z = event.srcElement;
+          temp1 = z.style.pixelLeft;
+          temp2 = z.style.pixelTop;
+          x = event.clientX;
+          y = event.clientY;
+          document.onmousemove = move;
+        }
+      }
+      document.onmousedown = drags;
+      document.onmouseup = new Function("dragapproved=false");
+    </script>
+
+    <style type="text/css">
+      input {
+        color: CC0000;
+        /* background: ; */
+        font-size: 11px;
+        font-weight: regular;
+        text-decoration: none;
+        font-family: verdanal;
+        text-align: lest;
+        border-width: 1px;
+        border-style: solid;
+        border-color: CC0000;
+      }
+    </style>
+
+    <style type="text/css">
+      body{scrollbar-face-color:white;
+      scrollbar-arrow-color:white;
+      scrollbar-shadow-color:#CC0000;
+      scrollbar-highlight-color:#cc0000;
+      scrollbar-3dlight-color:white;
+      scrollbar-darkshadow-Color:#CC0000;
+      scrollbar-track-color:#CC0000}body,tr,td {font-size: 11px; font-family: verdana; text-align: justify; color:#CC0000; line-height:15px; letter-spacing:1pt}td {
+      font-size: 11px;
+      font-family: verdana;
+      line-height: 16px;
+      text-align: justify;
+      color:}A:link{
+      color: #CC0000;
+      TEXT-DECORATION: NONE;
+      font-weight: normal;font-size:11px; letter-spacing:1pt} A:visited{COLOR: #CC0000;TEXT-DECORATION: none;
+      font-weight: normal;font-size:11px;letter-spacing:1pt} A:active{ COLOR:#CC0000;
+      TEXT-DECORATION: normal;font-size:11px;letter-spacing:1pt} A:hover{ COLOR: cc0000; TEXT-DECORATION: overline-underline; cursor: crosshair;border:1pt solid; font weight:none; font-size:11px}font{font-family: arial;color:#cc0000; font-size:11px;letter-spacing:1pt;} b {color:#cc0000;font-weight:bold;font-size: 11px;font-family: verdana} i {color:black;font-weight:italic;font-style:normal;font-size:11px;letter-spacing:1pt;font-family: verdana}
+    </style>
+  </head>
+  <body>
+    At this page, you can have fun creating words with ABC's. This is another
+    thing you can do when you're bored, but, just not as intense as the bored
+    section =)
+    <br /><br /><br />
+    <br />
+    <center>
+      Put the letters on the line below and drag the letters to the line, or
+      wherever..
+    </center>
+    <br /><br /><br />
+
+    <hr color="#CC0000" />
+    <br /><br /><br /><br />
+    <b class="drag">A</b>
+    <b class="drag">A</b>
+    <b class="drag">A</b>
+    <b class="drag">A</b>
+    <b class="drag">A</b>
+    <b class="drag">a</b>
+    <b class="drag">a</b>
+    <b class="drag">a</b>
+    <b class="drag">a</b>
+    <b class="drag">a</b>
+    <br />
+    <b class="drag">B</b>
+    <b class="drag">B</b>
+    <b class="drag">B</b>
+    <b class="drag">B</b>
+    <b class="drag">B</b>
+    <b class="drag">b</b>
+    <b class="drag">b</b>
+    <b class="drag">b</b>
+    <b class="drag">b</b>
+    <b class="drag">b</b>
+    <br />
+    <b class="drag">C</b>
+    <b class="drag">C</b>
+    <b class="drag">C</b>
+    <b class="drag">C</b>
+    <b class="drag">C</b>
+    <b class="drag">c</b>
+    <b class="drag">c</b>
+    <b class="drag">c</b>
+    <b class="drag">c</b>
+    <b class="drag">c</b>
+    <br />
+    <b class="drag">D</b>
+    <b class="drag">D</b>
+    <b class="drag">D</b>
+    <b class="drag">D</b>
+    <b class="drag">D</b>
+    <b class="drag">d</b>
+    <b class="drag">d</b>
+    <b class="drag">d</b>
+    <b class="drag">d</b>
+    <b class="drag">d</b>
+    <br />
+    <b class="drag">E</b>
+    <b class="drag">E</b>
+    <b class="drag">E</b>
+    <b class="drag">E</b>
+    <b class="drag">E</b>
+    <b class="drag">e</b>
+    <b class="drag">e</b>
+    <b class="drag">e</b>
+    <b class="drag">e</b>
+    <b class="drag">e</b>
+    <br />
+    <b class="drag">F</b>
+    <b class="drag">F</b>
+    <b class="drag">F</b>
+    <b class="drag">F</b>
+    <b class="drag">F</b>
+    <b class="drag">f</b>
+    <b class="drag">f</b>
+    <b class="drag">f</b>
+    <b class="drag">f</b>
+    <b class="drag">f</b>
+    <br />
+    <b class="drag">G</b>
+    <b class="drag">G</b>
+    <b class="drag">G</b>
+    <b class="drag">G</b>
+    <b class="drag">G</b>
+    <b class="drag">g</b>
+    <b class="drag">g</b>
+    <b class="drag">g</b>
+    <b class="drag">g</b>
+    <b class="drag">g</b>
+    <br />
+    <b class="drag">H</b>
+    <b class="drag">H</b>
+    <b class="drag">H</b>
+    <b class="drag">H</b>
+    <b class="drag">H</b>
+    <b class="drag">h</b>
+    <b class="drag">h</b>
+    <b class="drag">h</b>
+    <b class="drag">h</b>
+    <b class="drag">h</b>
+    <br />
+    <b class="drag">I</b>
+    <b class="drag">I</b>
+    <b class="drag">I</b>
+    <b class="drag">I</b>
+    <b class="drag">I</b>
+    <b class="drag">i</b>
+    <b class="drag">i</b>
+    <b class="drag">i</b>
+    <b class="drag">i</b>
+    <b class="drag">i</b>
+    <br />
+    <b class="drag">J</b>
+    <b class="drag">J</b>
+    <b class="drag">J</b>
+    <b class="drag">J</b>
+    <b class="drag">J</b>
+    <b class="drag">j</b>
+    <b class="drag">j</b>
+    <b class="drag">j</b>
+    <b class="drag">j</b>
+    <b class="drag">j</b>
+    <br />
+    <b class="drag">K</b>
+    <b class="drag">K</b>
+    <b class="drag">K</b>
+    <b class="drag">K</b>
+    <b class="drag">K</b>
+    <b class="drag">k</b>
+    <b class="drag">k</b>
+    <b class="drag">k</b>
+    <b class="drag">k</b>
+    <b class="drag">k</b>
+    <br />
+    <b class="drag">L</b>
+    <b class="drag">L</b>
+    <b class="drag">L</b>
+    <b class="drag">L</b>
+    <b class="drag">L</b>
+    <b class="drag">l</b>
+    <b class="drag">l</b>
+    <b class="drag">l</b>
+    <b class="drag">l</b>
+    <b class="drag">l</b>
+    <br />
+    <b class="drag">M</b>
+    <b class="drag">M</b>
+    <b class="drag">M</b>
+    <b class="drag">M</b>
+    <b class="drag">M</b>
+    <b class="drag">m</b>
+    <b class="drag">m</b>
+    <b class="drag">m</b>
+    <b class="drag">m</b>
+    <b class="drag">m</b>
+    <br />
+    <b class="drag">N</b>
+    <b class="drag">N</b>
+    <b class="drag">N</b>
+    <b class="drag">N</b>
+    <b class="drag">N</b>
+    <b class="drag">n</b>
+    <b class="drag">n</b>
+    <b class="drag">n</b>
+    <b class="drag">n</b>
+    <b class="drag">n</b>
+    <br />
+    <b class="drag">O</b>
+    <b class="drag">O</b>
+    <b class="drag">O</b>
+    <b class="drag">O</b>
+    <b class="drag">O</b>
+    <b class="drag">o</b>
+    <b class="drag">o</b>
+    <b class="drag">o</b>
+    <b class="drag">o</b>
+    <b class="drag">o</b>
+    <br />
+    <b class="drag">P</b>
+    <b class="drag">P</b>
+    <b class="drag">P</b>
+    <b class="drag">P</b>
+    <b class="drag">P</b>
+    <b class="drag">p</b>
+    <b class="drag">p</b>
+    <b class="drag">p</b>
+    <b class="drag">p</b>
+    <b class="drag">p</b>
+    <br />
+    <b class="drag">Q</b>
+    <b class="drag">Q</b>
+    <b class="drag">Q</b>
+    <b class="drag">Q</b>
+    <b class="drag">Q</b>
+    <b class="drag">q</b>
+    <b class="drag">q</b>
+    <b class="drag">q</b>
+    <b class="drag">q</b>
+    <b class="drag">q</b>
+    <br />
+    <b class="drag">R</b>
+    <b class="drag">R</b>
+    <b class="drag">R</b>
+    <b class="drag">R</b>
+    <b class="drag">R</b>
+    <b class="drag">r</b>
+    <b class="drag">r</b>
+    <b class="drag">r</b>
+    <b class="drag">r</b>
+    <b class="drag">r</b>
+    <br />
+    <b class="drag">S</b>
+    <b class="drag">S</b>
+    <b class="drag">S</b>
+    <b class="drag">S</b>
+    <b class="drag">S</b>
+    <b class="drag">s</b>
+    <b class="drag">s</b>
+    <b class="drag">s</b>
+    <b class="drag">s</b>
+    <b class="drag">s</b>
+    <br />
+    <b class="drag">T</b>
+    <b class="drag">T</b>
+    <b class="drag">T</b>
+    <b class="drag">T</b>
+    <b class="drag">T</b>
+    <b class="drag">t</b>
+    <b class="drag">t</b>
+    <b class="drag">t</b>
+    <b class="drag">t</b>
+    <b class="drag">t</b>
+    <b class="drag">t</b>
+    <br />
+    <b class="drag">U</b>
+    <b class="drag">U</b>
+    <b class="drag">U</b>
+    <b class="drag">U</b>
+    <b class="drag">U</b>
+    <b class="drag">u</b>
+    <b class="drag">u</b>
+    <b class="drag">u</b>
+    <b class="drag">u</b>
+    <b class="drag">u</b>
+    <br />
+    <b class="drag">V</b>
+    <b class="drag">V</b>
+    <b class="drag">V</b>
+    <b class="drag">V</b>
+    <b class="drag">V</b>
+    <b class="drag">v</b>
+    <b class="drag">v</b>
+    <b class="drag">v</b>
+    <b class="drag">v</b>
+    <b class="drag">v</b>
+    <br />
+    <b class="drag">W</b>
+    <b class="drag">W</b>
+    <b class="drag">W</b>
+    <b class="drag">W</b>
+    <b class="drag">W</b>
+    <b class="drag">w</b>
+    <b class="drag">w</b>
+    <b class="drag">w</b>
+    <b class="drag">w</b>
+    <b class="drag">w</b>
+    <br />
+    <b class="drag">X</b>
+    <b class="drag">X</b>
+    <b class="drag">X</b>
+    <b class="drag">X</b>
+    <b class="drag">X</b>
+    <b class="drag">x</b>
+    <b class="drag">x</b>
+    <b class="drag">x</b>
+    <b class="drag">x</b>
+    <b class="drag">x</b>
+    <br />
+    <b class="drag">Y</b>
+    <b class="drag">Y</b>
+    <b class="drag">Y</b>
+    <b class="drag">Y</b>
+    <b class="drag">Y</b>
+    <b class="drag">y</b>
+    <b class="drag">y</b>
+    <b class="drag">y</b>
+    <b class="drag">y</b>
+    <b class="drag">y</b>
+    <br />
+    <b class="drag">Z</b>
+    <b class="drag">Z</b>
+    <b class="drag">Z</b>
+    <b class="drag">Z</b>
+    <b class="drag">Z</b>
+    <b class="drag">z</b>
+    <b class="drag">z</b>
+    <b class="drag">z</b>
+    <b class="drag">z</b>
+    <b class="drag">z</b>
+    <br />
+    <b class="drag">!</b>
+    <b class="drag">!</b>
+    <b class="drag">!</b>
+    <b class="drag">!</b>
+    <b class="drag">!</b>
+    <b class="drag">?</b>
+    <b class="drag">?</b>
+    <b class="drag">?</b>
+    <b class="drag">?</b>
+    <b class="drag">?</b>
+    <b class="drag">.</b>
+    <b class="drag">.</b>
+    <b class="drag">.</b>
+    <b class="drag">.</b>
+    <b class="drag">.</b>
+  </body>
+</html>
